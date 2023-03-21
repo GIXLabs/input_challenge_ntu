@@ -2933,14 +2933,14 @@
 <wire x1="5" y1="-4.7" x2="5" y2="7.3" width="0.1524" layer="21"/>
 <wire x1="5" y1="7.3" x2="-3.25" y2="7.3" width="0.1524" layer="21"/>
 </package>
-<package name="TERMINAL_BLOCK_3P" library_version="23">
-<pad name="VCC" x="0" y="5" drill="1.016" diameter="1.778"/>
-<pad name="SIG" x="3.5" y="0" drill="1.016" diameter="1.778"/>
+<package name="TERMINAL_BLOCK_3P" library_version="25">
+<pad name="VCC" x="0" y="0" drill="1.016" diameter="1.778"/>
+<pad name="SIG" x="3.5" y="5" drill="1.016" diameter="1.778"/>
 <wire x1="-3.25" y1="7.3" x2="-3.25" y2="-4.7" width="0.1524" layer="21"/>
 <wire x1="-3.25" y1="-4.7" x2="8.5" y2="-4.7" width="0.1524" layer="21"/>
 <wire x1="8.5" y1="-4.7" x2="8.5" y2="7.3" width="0.1524" layer="21"/>
 <wire x1="8.5" y1="7.3" x2="-3.25" y2="7.3" width="0.1524" layer="21"/>
-<pad name="GND" x="7" y="5" drill="1.016" diameter="1.778"/>
+<pad name="GND" x="7" y="0" drill="1.016" diameter="1.778"/>
 </package>
 </packages>
 <symbols>
@@ -2980,7 +2980,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="3PIN_SENSOR" library_version="23">
+<deviceset name="3PIN_SENSOR" library_version="25">
 <gates>
 <gate name="G$1" symbol="TERMINAL_BLOCK_3P" x="0" y="0"/>
 </gates>
@@ -3205,7 +3205,7 @@
 <part name="U$5" library="inputChallengeLib" library_urn="urn:adsk.wipprod:fs.file:vf.obDYJ6n5ScKVyjFd1jiOww" deviceset="TERMINAL_BLOCK" device=""/>
 <part name="SUPPLY6" library="Power_Symbols" deviceset="GND" device="" value="GND"/>
 <part name="U$6" library="inputChallengeLib" library_urn="urn:adsk.wipprod:fs.file:vf.obDYJ6n5ScKVyjFd1jiOww" deviceset="3PIN_SENSOR" device=""/>
-<part name="U$7" library="inputChallengeLib" library_urn="urn:adsk.wipprod:fs.file:vf.obDYJ6n5ScKVyjFd1jiOww" deviceset="3PIN_SENSOR" device=""/>
+<part name="U$7" library="inputChallengeLib" library_urn="urn:adsk.wipprod:fs.file:vf.obDYJ6n5ScKVyjFd1jiOww" deviceset="3PIN_SENSOR" device="" value="3PIN_SENSOR"/>
 <part name="U$8" library="inputChallengeLib" library_urn="urn:adsk.wipprod:fs.file:vf.obDYJ6n5ScKVyjFd1jiOww" deviceset="3PIN_SENSOR" device=""/>
 <part name="SUPPLY1" library="Power_Symbols" deviceset="GND" device="" value="GND"/>
 <part name="SUPPLY2" library="Power_Symbols" deviceset="GND" device="" value="GND"/>
@@ -3329,36 +3329,36 @@
 <junction x="-53.34" y="33.02"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="GND"/>
 <wire x1="-38.1" y1="132.08" x2="-35.56" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="GND"/>
+<pinref part="U$6" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="GND"/>
 <wire x1="-38.1" y1="106.68" x2="-35.56" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="GND"/>
+<pinref part="U$7" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="GND"/>
 <wire x1="-38.1" y1="81.28" x2="-35.56" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="GND"/>
+<pinref part="U$8" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="VCC"/>
 <wire x1="-38.1" y1="142.24" x2="-35.56" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="+3.3V"/>
+<pinref part="U$6" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="VCC"/>
 <wire x1="-38.1" y1="116.84" x2="-35.56" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="+3.3V"/>
+<pinref part="U$7" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="VCC"/>
 <wire x1="-38.1" y1="91.44" x2="-35.56" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="G$1" pin="+3.3V"/>
+<pinref part="U$8" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="G$1" pin="+3.3V"/>
@@ -3369,9 +3369,9 @@
 </net>
 <net name="ADC0" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="SIG"/>
 <wire x1="-38.1" y1="137.16" x2="-33.02" y2="137.16" width="0.1524" layer="91"/>
 <label x="-33.02" y="137.16" size="1.778" layer="95"/>
+<pinref part="U$6" gate="G$1" pin="SIG"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GP26"/>
@@ -3381,9 +3381,9 @@
 </net>
 <net name="ADC1" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="SIG"/>
 <wire x1="-38.1" y1="111.76" x2="-33.02" y2="111.76" width="0.1524" layer="91"/>
 <label x="-33.02" y="111.76" size="1.778" layer="95"/>
+<pinref part="U$7" gate="G$1" pin="SIG"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GP27"/>
@@ -3393,9 +3393,9 @@
 </net>
 <net name="ADC2" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="SIG"/>
 <wire x1="-38.1" y1="86.36" x2="-33.02" y2="86.36" width="0.1524" layer="91"/>
 <label x="-33.02" y="86.36" size="1.778" layer="95"/>
+<pinref part="U$8" gate="G$1" pin="SIG"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GP28"/>
