@@ -4,10 +4,10 @@
 You are tasked with creating a hardware device to (nagivate Netflix, browse Twitter, play Tetris, etc). We have provided some pre-programmed boards that handle most of the electronics and coding, but you will need to build the physical interface.
 
 # Table of Contents
-- [Materials]()
-- [Electrical Assembly]()
+- [Materials](#materials)
+- [Electrical Assembly](#electrical-assembly)
 - [Schematics]()
-- [Code]()
+- [Code](src/README.md)
 
 # Materials
 [Insert picture of supplies laid out]()
