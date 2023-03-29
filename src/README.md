@@ -18,3 +18,6 @@ Your board should have all of the following already, but you will need to add th
 The code is changed by plugging the Raspberry Pi Pico directly into your computer via a USB cable and editing the file marked `code.py` which can be done using any text editor (even NotePad or TextEdit).
 
 We recommend using [Mu Editor](https://codewith.mu/en/download) as it has a built in serial terminal that will allow you to debug the code with print statements.
+
+## Keycodes
+If you would like to change which keystrokes the board makes, you will need this [list of keycodes](https://docs.circuitpython.org/projects/hid/en/latest/_modules/adafruit_hid/keycode.html).
