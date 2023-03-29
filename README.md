@@ -12,7 +12,7 @@ You must choose a target user and scenario for whom you're making your device.
 - [Code](src/README.md)
 
 # Materials
-[Insert picture of supplies laid out]()
+![Supplies laid out](assets/components.svg)
 - Raspberry Pi Pico main board
 - Micro USB cable
 - Switches
