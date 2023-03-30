@@ -24,4 +24,4 @@ while True:
         button.update()
         if button.fell:
             print("Button pressed")
-            keyboard.send(Keycode.W)
+            keyboard.send(Keycode.UP_ARROW)
