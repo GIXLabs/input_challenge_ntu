@@ -10,10 +10,21 @@ from adafruit_debouncer import Debouncer
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
 
+# Returns a dictionary that pairs the debounced button object with a keystroke, allowing for 
+def setup_button(pin, keystroke):
+    dio = DigitalInOut(pin)
+    # Sets the input pin as a pull up, so the pin will read High when not actuated and Low when actuated
+    dio.pull = Pull.UP
+    button = 
+        {
+        'KEYSTROKE': keystroke, 
+        'OBJECT': Debouncer(dio)
+        }
+    return button
+
 # Set up Pico pin ADC0 as an analog input
 analog_in = AnalogIn(board.A0)
 
-# Check whether a potentiometer is plugged in
 # The following takes two readings from the analog pin and compares them. If they are close to the same value, it assumes a potentiometer is connected.
 test_val_one = analog_in.value
 time.sleep(.2)
@@ -28,28 +39,28 @@ else:
 # Create a keyboard object that handles the USB protocol for sending keystrokes
 keyboard = Keyboard(usb_hid.devices)
 
-last_down = time.monotonic() # Set the 
+last_down = time.monotonic() # Set the most recent sending of the down key to the time of bootup
 spacing = 0 # This is the time between down presses (speed)
 
 # The following sets up a pin on the Pico to work as a debounced button. It adds button to a list of buttons.
 buttons = []
-dio = DigitalInOut(board.GP2)
-# Sets the input pin as a pull up, so the pin will read High when not actuated and Low when actuated
-dio.pull = Pull.UP 
-buttons.append(Debouncer(dio))
+buttons.append(setup_button(board.GP2, Keycode.LEFT_ARROW))
+buttons.append(setup_button(board.GP3, Keycode.RIGHT_ARROW))
+buttons.append(setup_button(board.GP4, Keycode.UP_ARROW))
+buttons.append(setup_button(board.GP5, Keycode.SPACEBAR))
 
 while True:
     # Iterates through the list of buttons
     for button in buttons:
-        button.update()
-        if button.fell:
+        button['OBJECT'].update()
+        if button['OBJECT'].fell:
             print("Button pressed")
-            keyboard.send(Keycode.UP_ARROW)
+            keyboard.send(button['KEYSTROKE'])
 
     # Read the value from the potentiometer
     pin_val = analog_in.value
 
-    if pin_val > 500: # Only true if the potentiometer has been turned a little
+    if pin_val > 500 and potentiometer_present: # Only true if the potentiometer has been turned a little and a potentiometer was detected on boot
         # Scale the value from the pin linearly to change the spacing between down clicks (speed)
         spacing = 65085 / (4 * pin_val - 1800)
 
