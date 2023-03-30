@@ -10,16 +10,15 @@ from adafruit_debouncer import Debouncer
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
 
-# Returns a dictionary that pairs the debounced button object with a keystroke, allowing for 
+# Returns a dictionary that pairs the debounced button object with a keystroke, allowing for slightly more readable code later
 def setup_button(pin, keystroke):
     dio = DigitalInOut(pin)
     # Sets the input pin as a pull up, so the pin will read High when not actuated and Low when actuated
     dio.pull = Pull.UP
-    button = 
-        {
-        'KEYSTROKE': keystroke, 
-        'OBJECT': Debouncer(dio)
-        }
+    button = {
+            'KEYSTROKE': keystroke, 
+            'OBJECT': Debouncer(dio)
+            }
     return button
 
 # Set up Pico pin ADC0 as an analog input
@@ -42,8 +41,9 @@ keyboard = Keyboard(usb_hid.devices)
 last_down = time.monotonic() # Set the most recent sending of the down key to the time of bootup
 spacing = 0 # This is the time between down presses (speed)
 
-# The following sets up a pin on the Pico to work as a debounced button. It adds button to a list of buttons.
+# The following sets up all the pins and keyboard outputs associated with those pins
 buttons = []
+# The next 4 lines are the ones you will most likely want to edit
 buttons.append(setup_button(board.GP2, Keycode.LEFT_ARROW))
 buttons.append(setup_button(board.GP3, Keycode.RIGHT_ARROW))
 buttons.append(setup_button(board.GP4, Keycode.UP_ARROW))
