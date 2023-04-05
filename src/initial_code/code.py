@@ -26,10 +26,10 @@ analog_in = AnalogIn(board.A0)
 
 # The following takes two readings from the analog pin and compares them. If they are close to the same value, it assumes a potentiometer is connected.
 test_val_one = analog_in.value
-time.sleep(.2)
+time.sleep(.1)
 test_val_two = analog_in.value
 potentiometer_present = False
-if abs(test_val_one - test_val_two) < 5:
+if abs(test_val_one - test_val_two) < 20:
     print("Potentiometer detected")
     potentiometer_present = True
 else:
