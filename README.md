@@ -49,13 +49,13 @@ The potentiometer wires go into the green terminal blocks with three holes. The 
 The potentiometer (knob) controls how fast bricks fall by "feathering" the down button. If the potentiometer is not wired, this feature will be deactivated.
 
 # Extra Credit
-- Coding
-    - Implement the spacebar code.
-    - Implement a series of commands instead of just one button press. For example, pressing the button connected to GP4 could send several rotation commands instead of one.
-    - Edit the potentiometer code to have the blocks fall faster or slower.
 - Fabrication
     - Lasercut and heat bend a controller. (Lasercutting tutorial takes about 30 minutes)
     - 3D print your controller. (very hard, but doable with the faster printers)
 - Electronics
     - Find a different button to use with the board in the Prototyping Labs.
     - Use something other than a real button as a button.
+- Coding
+    - Implement the spacebar code.
+    - Implement a series of commands instead of just one button press. For example, pressing the button connected to GP4 could send several rotation commands instead of one.
+    - Edit the potentiometer code to have the blocks fall faster or slower.
