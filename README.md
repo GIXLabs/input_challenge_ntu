@@ -14,14 +14,14 @@ You must choose a target user and scenario for whom you're making your device.
 # Getting Started
 1. Assemble the electronics and see how they work with Tetris. Try playing it on a computer and make sure you get the button presses you expect. See the table in the [Operation section.](#operation)
 1. Come up with a target user and scenario for whom you're making your device. Spend about 10 minutes coming up with this.
-1. Build the enclosure using the tools in the Prototyping Labs. Cardboard and hot glue is perfectly fine, but feel free to stretch a little and try using the lasers or any other tool in the main area.
+1. Build the enclosure using the tools in the Prototyping Labs. Cardboard and hot glue is perfectly fine, but feel free to stretch a little and try [using the lasers](https://gixlabs.github.io/how_to/first_lasercut.html) or any other tool in the main area.
 1. Test your prototype.
 1. Make your prototype better based on your test.
 
 # Materials
 ![Supplies laid out](assets/components.svg)
 - Raspberry Pi Pico main board
-- Micro USB cable
+- Micro USB cable (not pictured)
 - Switches
 - Potentiometer
 - Anything you can find in the Prototyping Labs
@@ -50,7 +50,7 @@ The potentiometer (knob) controls how fast bricks fall by "feathering" the down 
 
 # Extra Credit
 - Fabrication
-    - Lasercut and heat bend a controller. (Lasercutting tutorial takes about 30 minutes)
+    - Lasercut and heat bend a controller. ([Lasercutting tutorial takes about 30 minutes](https://gixlabs.github.io/how_to/first_lasercut.html))
     - 3D print your controller. (very hard, but doable with the faster printers)
 - Electronics
     - Find a different button to use with the board in the Prototyping Labs.
