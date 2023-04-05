@@ -8,6 +8,7 @@ You must choose a target user and scenario for whom you're making your device.
 - [Materials](#materials)
 - [Electrical Assembly](#electrical-assembly)
 - [Code](src/)
+- [Mechanical Design](cad/)
 - [Extra Credit](#extra-credit)
 
 # Getting Started
