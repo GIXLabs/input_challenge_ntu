@@ -44,7 +44,7 @@ The potentiometer wires go into the green terminal blocks with three holes. The 
 | GP4 | Up Button (rotate the piece) |
 | GP5 | Spacebar (drop the piece)* |
 
-*The code loaded on the device does not implement the spacebar button. You will either need to edit the text file on the device to add that functionality or drag the [correct code here](src/code.py) onto the device. To achieve high scores, you'll need that functionality.
+*The code loaded on the device does not implement the spacebar button. For information on editing the code, [click here](src/). To achieve high scores, you'll need that functionality.
 
 The potentiometer (knob) controls how fast bricks fall by "feathering" the down button. If the potentiometer is not wired, this feature will be deactivated.
 
