@@ -21,7 +21,7 @@ You must choose a target user and scenario for whom you're making your device.
 
 # Materials
 ![Supplies laid out](assets/components.svg)
-- Raspberry Pi Pico main board
+- Raspberry Pi Pico main board (yours will have less green blocks)
 - Micro USB cable (not pictured)
 - Switches
 - Potentiometer
