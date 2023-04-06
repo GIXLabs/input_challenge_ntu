@@ -4,19 +4,19 @@ You are tasked with creating a hardware device to play [Tetris in the browser](h
 You must choose a target user and scenario for whom you're making your device.
 
 # Table of Contents
-- [Getting Started](#getting-started)
+- [Procedure](#procedure)
 - [Materials](#materials)
 - [Electrical Assembly](#electrical-assembly)
 - [Code](src/)
 - [Mechanical Design](cad/)
 - [Extra Credit](#extra-credit)
 
-# Getting Started
-1. Assemble the electronics and see how they work with Tetris. Try playing it on a computer and make sure you get the button presses you expect. See the table in the [Operation section.](#operation)
+# Procedure
+1. [Assemble the electronics](#electrical-assembly) and see how they work with Tetris. Try playing it on a computer and make sure you get the button presses you expect, but don't feel the need to edit the code at this point. See the table in the [Operation section](#operation) for what the buttons are supposed to do.
 1. Come up with a target user and scenario for whom you're making your device. Spend about 10 minutes coming up with this.
 1. Build the enclosure using the tools in the Prototyping Labs. Cardboard and hot glue is perfectly fine, but feel free to stretch a little and try [using the lasers](https://gixlabs.github.io/how_to/first_lasercut.html) or any other tool in the main area.
-1. Test your prototype.
-1. Make your prototype better based on your test.
+1. Test your prototype, in other words, [play Tetris](https://tetris.com/play-tetris).
+1. Make your prototype better based on your test. Consider trying out one of the challenges in the [Extra Credit](#extra-credit) section.
 
 # Materials
 ![Supplies laid out](assets/components.svg)
