@@ -5,14 +5,25 @@
     1. Download files as svg. No need to change any of the other settings.
 1. Ask a member of staff to invite you to the Glowforge system. You will need to sign up for an account, but it is free. Please skip any features that ask for a credit card.
 1. "Create a new design" in the [Glowforge interface](app.glowforge.com)
-![Image of Glowforge home screen]()
+
+    ![Image of Glowforge home screen](/assets/glowforge_home.svg)
+
 1. Add [button holes (copy and paste to get multiple)](button_hole.svg), [potentiometer hole](potentiometer_hole.svg), and [micro-USB hole](usb_hole.svg).
-![Image of Glowforge interface]()
+
+    ![Image of Glowforge interface](/assets/glowforge_add.svg)
+
 1. In the Glowforge interface, click and drag those holes around on the generated box pieces to place them where you want them.
 1. You will need to set the material to "Medium Draftboard" in the top left of the Glowforge interface. You may have to search using the search box.
-![Image showing where to select materials]()
-1. Click print in the top right of the interface.
-![Image showing the Print button]()
+
+    ![Image showing where to select materials](/assets/glowforge_materials.svg)
+
+1. Set the text to "Ignore."
+
+    ![Image showing where Ignore is found](/assets/glowforge_ignore.svg)
+
+1. Click "Print" in the top right of the interface.
+
+    ![Image showing the Print button](/assets/glowforge_print.svg)
 
 # Dimensions
 The main board outline is 2.2 inches wide by 2.1 inches deep x 1.6 mm tall. Please pardon the mixed units, but that's just how PCB design is.
