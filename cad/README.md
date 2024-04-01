@@ -25,6 +25,8 @@
 
     ![Image showing the Print button](/assets/glowforge_print.svg)
 
+1. Press the big glowing button on the Glowforge and stay to watch your cut. Watching your cut is important as fires are common in lasers.
+
 # Dimensions
 The main board outline is 2.2 inches wide by 2.1 inches deep x 1.6 mm tall. Please pardon the mixed units, but that's just how PCB design is.
 
