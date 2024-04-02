@@ -9,24 +9,32 @@
 
     ![Image of Glowforge home screen](/assets/glowforge_home.svg)
 
-1. Add [button holes (copy and paste to get multiple)](button_hole.svg), [potentiometer hole](potentiometer_hole.svg), and [micro-USB hole](usb_hole.svg).
-
-    ![Image of Glowforge interface](/assets/glowforge_add.svg)
-
-1. In the Glowforge interface, click and drag those holes around on the generated box pieces to place them where you want them.
+1. Find the 1/8" MDF in the laser material storage and put a sheet of it in your laser on the black honeycomb tray. If you can, try to use pieces that already have something cut out of them. The numbers in the top right of the Glowforge interface indicate which laser is yours.
 1. You will need to set the material to "Medium Draftboard" in the top left of the Glowforge interface. You may have to search using the search box.
 
     ![Image showing where to select materials](/assets/glowforge_materials.svg)
+    
+    1. Greyed out parts are ones outside the Glowforge's cuttable area and will need to be moved onto the material.
+
+1. Add [button holes (copy and paste to get multiple)](button_hole.svg), [potentiometer hole](potentiometer_hole.svg), and [micro-USB hole](usb_hole.svg). There is a download symbol on each of these pages that you'll need to use.
+
+    ![Image of Glowforge interface](/assets/glowforge_add.svg)
+
+1. In the Glowforge interface, click and drag those holes around on the generated box pieces to place them where you want them. Be careful not to accidentally scale the pieces.
 
 1. Set the text to "Ignore."
 
     ![Image showing where Ignore is found](/assets/glowforge_ignore.svg)
 
+1. Make sure that all of your parts are on the material in the laser and are not greyed out. You can box select groups of them and move them around.
+    1. If you are using scraps, you can move items you don't want to cut outside the cuttable area. Anything greyed out won't be cut, which is sometimes desirable.
 1. Click "Print" in the top right of the interface.
 
     ![Image showing the Print button](/assets/glowforge_print.svg)
 
 1. Press the big glowing button on the Glowforge and stay to watch your cut. Watching your cut is important as fires are common in lasers.
+1. Once the laser has stopped making noise, you can open the lid and pull the parts out (don't worry, they aren't hot).
+1. You've made your first box! Test it out and iterate!
 
 # Dimensions
 The main board outline is 2.2 inches wide by 2.1 inches deep x 1.6 mm tall. Please pardon the mixed units, but that's just how PCB design is.
