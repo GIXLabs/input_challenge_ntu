@@ -10,8 +10,8 @@
 
     ![Image of Glowforge home screen](/assets/glowforge_home.svg)
 
-1. Find the 1/8" MDF in the laser material storage and put a sheet of it in your laser on the black honeycomb tray. Position doesn't matter much, and you can close the lid once you have the piece in. If you can, try to use pieces that already have something cut out of them. The numbers in the top right of the Glowforge interface indicate which laser is yours. The number on the machine is near the barcode.
-1. You will need to set the material to "Medium Draftboard" in the top left of the Glowforge interface. You may have to search using the search box.
+1. Find the 1/8" Birch Wood in the laser material storage and put a sheet of it in your laser on the black honeycomb tray. Position doesn't matter much, and you can close the lid once you have the piece in. If you can, try to use pieces that already have something cut out of them. The numbers in the top right of the Glowforge interface indicate which laser is yours. The number on the machine is near the barcode.
+1. You will need to set the material to "Medium Cherry Plywood" in the top left of the Glowforge interface. You may have to search using the search box.
 
     ![Image showing where to select materials](/assets/glowforge_materials.svg)
     
