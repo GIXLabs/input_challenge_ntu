@@ -1,15 +1,16 @@
 # Making a basic laser enclosure (no design experience needed)
 1. [Open up a box generator.](https://en.makercase.com/#/basicbox)
     1. We recommend using a thickness of 0.125 inches.
-    1. Adding fingers will make assembly easier. Change the "Edge Joints" to fingers.
+    1. Adding fingers will make assembly easier. Change the "Edge Joints" to fingers. Finger size doesn't matter much, but the more fingers you have, the harder it will be to fit together.
+    1. You may need to change the dimensions to fit the printed circuit board (PCB).
     1. Download files as svg. No need to change any of the other settings.
 1. Ask a member of staff to invite you to the Glowforge system. You will need to sign up for an account, but it is free. Please skip any features that ask for a credit card.
-    1. You will get an email and you'll need to click "Click here to get started."
-1. "Create a new design" in the [Glowforge interface](https://app.glowforge.com)
+    1. You will get an email and you'll need to click "Click here to get started." Feel free to skip the tutorials.
+1. "Create a new design" and "Upload a file" in the [Glowforge interface](https://app.glowforge.com)
 
     ![Image of Glowforge home screen](/assets/glowforge_home.svg)
 
-1. Find the 1/8" MDF in the laser material storage and put a sheet of it in your laser on the black honeycomb tray. If you can, try to use pieces that already have something cut out of them. The numbers in the top right of the Glowforge interface indicate which laser is yours.
+1. Find the 1/8" MDF in the laser material storage and put a sheet of it in your laser on the black honeycomb tray. Position doesn't matter much, and you can close the lid once you have the piece in. If you can, try to use pieces that already have something cut out of them. The numbers in the top right of the Glowforge interface indicate which laser is yours. The number on the machine is near the barcode.
 1. You will need to set the material to "Medium Draftboard" in the top left of the Glowforge interface. You may have to search using the search box.
 
     ![Image showing where to select materials](/assets/glowforge_materials.svg)
