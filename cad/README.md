@@ -4,7 +4,8 @@
     1. Adding fingers will make assembly easier. Change the "Edge Joints" to fingers.
     1. Download files as svg. No need to change any of the other settings.
 1. Ask a member of staff to invite you to the Glowforge system. You will need to sign up for an account, but it is free. Please skip any features that ask for a credit card.
-1. "Create a new design" in the [Glowforge interface](app.glowforge.com)
+    1. You will get an email and you'll need to click "Click here to get started."
+1. "Create a new design" in the [Glowforge interface](https://app.glowforge.com)
 
     ![Image of Glowforge home screen](/assets/glowforge_home.svg)
 
