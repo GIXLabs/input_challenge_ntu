@@ -2,7 +2,7 @@
 1. [Open up a box generator.](https://en.makercase.com/#/basicbox)
     1. We recommend using a thickness of 0.125 inches.
     1. Adding fingers will make assembly easier. Change the "Edge Joints" to fingers. Finger size doesn't matter much, but the more fingers you have, the harder it will be to fit together.
-    1. You may need to change the dimensions to fit the printed circuit board (PCB).
+    1. Change the size of the box. The default box is huge, so you may need to change the dimensions to fit the printed circuit board (PCB).
     1. Download files as svg. No need to change any of the other settings.
 1. Ask a member of staff to invite you to the Glowforge system. You will need to sign up for an account, but it is free. Please skip any features that ask for a credit card.
     1. You will get an email and you'll need to click "Click here to get started." Feel free to skip the tutorials.

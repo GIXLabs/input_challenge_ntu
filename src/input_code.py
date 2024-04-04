@@ -10,7 +10,7 @@ from analogio import AnalogIn
 from digitalio import DigitalInOut, Pull
 
 
-class InputCode:
+class Controller:
     """
     Class Variables
     """
@@ -20,12 +20,11 @@ class InputCode:
 
     def __init__(self, pin):
         self.analog_in = AnalogIn(pin)
-        self.last_down = (
-            time.monotonic()
-        )  # Set the most recent sending of the down key to the time of bootup
+        self.last_down = time.monotonic()
+        # Set the most recent sending of the down key to the time of bootup
         self.buttons = []
         self.spacing = 0
-        self.potentiometer_present = None
+        self.potentiometer_present = False
 
     # Returns a dictionary that pairs the debounced button object with a keystroke, allowing for slightly more readable code later
     def assign_button(self, pin, keystroke):
@@ -52,11 +51,13 @@ class InputCode:
         # Only true if the potentiometer has been turned a little and a potentiometer was detected on boot
         if self.analog_in.value > 500 and self.potentiometer_present:
             # Scale the value from the pin linearly to change the spacing between down clicks (speed)
-            self.spacing = 65085 / (4 * self.analog_in.value - 1800)
+            self.spacing = 65085 / (4 * self.analog_in.value - 1700)
+            if self.spacing < 0:
+                self.spacing = 1000
 
         # Compare the current time to the time the last down command was sent
         # If enough time has elapsed send a rotation command and set the most recent rotation time to now
-        if time.monotonic() - self.last_down > self.spacing:
+        if time.monotonic() - self.last_down > self.spacing and self.potentiometer_present:
             self.keyboard.send(Keycode.DOWN_ARROW)
             self.last_down = time.monotonic()
 
