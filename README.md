@@ -32,7 +32,7 @@ The button wires go into the green terminal blocks with two holes. It does not m
 
 ![Gif of plugging wires in](assets/wiring.gif)
 
-The potentiometer wires go into the green terminal blocks with three holes. The black wire needs to go into the center hole, but the other two can be place in either side hole (but not the same one!).
+The potentiometer wires go into the green terminal blocks with three holes. The black wire needs to go into the center hole, but the other two can be placed in either side hole (but not the same one!).
 
 ![Wired potentiometer](assets/wiring_potentiometer.svg)
 
