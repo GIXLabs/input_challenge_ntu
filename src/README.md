@@ -12,7 +12,7 @@ Although you can edit the code using TextEdit or Notepad, those are not the pref
 We recommend using [Mu Editor](https://codewith.mu/en/download) as it has a built in serial terminal that will allow you to debug the code with print statements.
 
 # Keycodes
-If you would like to change which keystrokes the board makes, you will need this [list of keycodes](https://docs.circuitpython.org/projects/hid/en/latest/_modules/adafruit_hid/keycode.html).
+If you would like to change which keystrokes the board makes, you will need this [list of keycodes](https://docs.circuitpython.org/projects/hid/en/latest/).
 
 # Required Libraries
 Your board should have all of the following already, but you will need to add them if you reformat your device.
